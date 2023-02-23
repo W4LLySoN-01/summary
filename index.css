@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;   
+}
+
+:root{
+    /* primaryColors */
+    --light-red: hsla(0, 100%, 67%, 0.356);
+    --orangey-yellow: hwb(39 12% 0% / 0.356);
+    --green-teal: hsla(166, 100%, 37%, 0.356);
+    --cobalt-blue:  hsla(234, 85%, 45%, 0.356);
+
+    /* gradients */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violeta-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* neutralColors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* mobileFirst */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-header{
+    height: 372px;
+    background-image: linear-gradient(to bottom, var(--light-royal-blue), var(--violeta-blue)); 
+    text-align: center;
+    border-radius: 0px 0px 25px 25px;
+    color: white;
+}
+
+.text{
+    padding: 25px 0px;
+    width: 300px;
+    margin: auto;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.score{
+    display: inline-block;
+    background-image: linear-gradient(to bottom, var(--violeta-blue), var(--light-royal-blue));
+    padding: 40px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.192);
+}
+
+.section1{
+    margin-top: 15px;
+    padding: 0px 15px;
+    background-color: var(--white);
+}
+
+#h2-sec{
+    padding: 10px 0px;
+}
+
+.barra-icones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 15px;
+    margin: 15px 0px;
+}
+
+.barra-1{
+    background-color: var(--light-red);
+}
+
+.barra-2{
+    background-color: var(--orangey-yellow);
+}
+
+.barra-3{
+    background-color: var(--green-teal);
+}
+
+.barra-4{
+    background-color: var(--cobalt-blue);
+}
+
+.btn{
+    text-align: center;
+    padding: 21px;
+    border-radius: 19px;
+    color: white;
+    background-color: var(--dark-gray-blue);
+}
+
+/* desktop */
+
+@media screen and (min-width: 850px){
+    body{
+        height: 98vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white; 
+    }
+
+    .main-container{
+        display: flex;
+        width: 735px;
+        justify-content: center;
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.253);
+    }
+
+    .container-header{
+        margin-right: auto;
+        width: 50%;
+        height: auto;   
+        border-radius: 25px;
+    }
+
+    .text{
+        margin: 10px auto;
+
+    }
+    
+    .score{
+        padding: 50px;
+        margin-bottom: 35px;
+    }
+    
+    .section1{
+        width: 50%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        border-radius: 0px 25px 25px 0px;
+    }
+}
